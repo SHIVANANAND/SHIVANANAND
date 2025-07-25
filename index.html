@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivan Anand</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/pictures/icons/favicon.ico">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Shivan Anand</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="mobile-nav">
+      <div class="logo">Shivan Anand</div>
+      <div class="menu">
+        <div id="nav-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          class="circle-pic"
+          src="./assets/pictures/profile-pic.png"
+          alt="Shivan Anand Picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Shivan Anand</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/documents/ShivanAnandResume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/pictures/icons/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/shivan-anand-/')"
+          />
+          <img
+            src="./assets/pictures/icons/github.png"
+            alt="My GitHub profile"
+            class="icon"
+            onclick="window.open('https://github.com/SHIVANANAND')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h2 class="title">About Me</h2>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/pictures/about-pic.png" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/pictures/icons/experience.png"
+                alt="Experience Icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>8+ months <br />Full-stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/pictures/icons/education.png"
+                alt="Education Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Bachelor of Technology <br />Artificial Intelligence & Data
+                Science
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I have accumulated over 8 months of experience in the IT
+              industry.<br /><br />
+              Throughout my career, I have had the opportunity to work with
+              diverse technologies and engage in various projects, from
+              development to implementation.<br /><br />My experience includes
+              positions at Let's Try and mNivesh, where I honed my skills in
+              software development and problem-solving. I thrive on tackling
+              complex challenges and enjoy finding innovative solutions that
+              have a real-world impact. Each day presents a chance to learn
+              something new, enhancing my expertise and contributing to
+              meaningful projects.<br /><br />I am always eager to connect and
+              discuss technology. Feel free to reach out 😊
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/pictures/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-table">
+        <div class="experience-row">
+          <div class="experience-date">MAR — JUN 2025</div>
+          <div class="experience-details">
+            <h3>
+              Software Engineer ·
+              <a href="https://letstryfoods.com/" target="_blank">Let's Try</a>
+            </h3>
+            <p>
+              Redesigned and optimized Lets Try Food's Shopify website with a
+              custom theme, <br />improving page load speed by 35% and
+              increasing user engagement by 25%<br />
+              Created UI/UX designs for the upcoming mobile app using Figma,
+              enhancing user retention<br />
+              Developed initial frontend scripts for the mobile app,
+              accelerating development speed by 30%<br />
+              Collaborated closely with the product team, ensuring consistent
+              branding and boosting cross-platform user satisfaction.
+            </p>
+            <div class="tech-badges">
+              <span>React.js</span>
+              <span>Shopify</span>
+              <span>Java</span>
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-row">
+          <div class="experience-date">SEP — OCT 2024</div>
+          <div class="experience-details">
+            <h3>
+              Software Engineer Intern ·
+              <a href="https://niveshonline.com/" target="_blank">mNivesh</a>
+            </h3>
+            <p>
+              Built an operations dashboard web app using MERN stack and Azure,
+              <br />streamlining transaction data visibility and improving
+              operational efficiency by 45%
+            </p>
+            <div class="tech-badges">
+              <span>Tailwind CSS</span>
+              <span>React.js</span>
+              <span>Next.js</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+              <span>PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-row exp-last-row">
+          <div class="experience-date">JUN — AUG 2024</div>
+          <div class="experience-details">
+            <h3>
+              SDE Intern ·
+              <a href="https://arcedtech.com/" target="_blank">ARCedtech</a>
+            </h3>
+            <p>
+              Designed and developed AI chatbot web application, improving user
+              experience and increasing engagement by 40%
+            </p>
+            <div class="tech-badges">
+              <span>HTML5</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Python</span>
+              <span>Wordpress</span>
+              <span>Bootstrap</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/pictures/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pictures/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">React CRUD</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/SHIVANANAND/React-CRUD-Assignment', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://react-crud-assignment.onrender.com/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pictures/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">AI Chatbot</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/SHIVANANAND/PrakritiAI-chatbot/', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://prakritiai-chatbot.streamlit.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pictures/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Portfolio v2</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/SHIVANANAND/PORTFOLIO', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://shivanportfolio.onrender.com/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/pictures/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/pictures/icons/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:shivananand.professional@gmail.com"
+              >shivananand.professional@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/pictures/icons/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/shivan-anand-/" target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p id="footer">
+        Copyright &#169; 2023 Shivan Anand. All Rights Reserved.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
